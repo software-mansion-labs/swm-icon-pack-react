@@ -1,0 +1,1 @@
+export { SwmIcon } from './SwmIcon';
