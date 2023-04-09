@@ -1,8 +1,20 @@
 {
-  "name": "swm-icon-pack-react",
+  "name": "@swm-icon-pack-react/icons",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/swm-icon-pack-react.cjs",
+  "module": "./dist/swm-icon-pack-react.js",
+  "exports": {
+    ".": {
+      "import": "./dist/swm-icon-pack-react.js",
+      "require": "./dist/swm-icon-pack-react.umd.cjs"
+    }
+  },
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -20,6 +32,7 @@
     "eslint-import-resolver-typescript": "^3.5.5",
     "pathe": "^1.1.0",
     "typescript": "^4.9.3",
-    "vite": "^4.2.0"
+    "vite": "^4.2.0",
+    "vite-plugin-dts": "^2.2.0"
   }
 }

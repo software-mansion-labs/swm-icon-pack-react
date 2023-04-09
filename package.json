@@ -1,10 +1,10 @@
 {
-  "name": "swm-icon-pack-react",
+  "name": "@swm-icon-pack-react/core",
   "version": "1.0.0",
   "description": "React components for SoftwareMansion Icon Pack",
-  "main": "index.js",
+  "main": "index.ts",
   "workspaces": [
-    "apps/**",
+    "example/**",
     "packages/*"
   ],
   "scripts": {
