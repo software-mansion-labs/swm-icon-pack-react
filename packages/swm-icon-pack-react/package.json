@@ -6,7 +6,7 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/swm-icon-pack-react.cjs",
+  "main": "./dist/swm-icon-pack-react.umd.cjs",
   "module": "./dist/swm-icon-pack-react.js",
   "exports": {
     ".": {
