@@ -1,5 +1,10 @@
 import { defineConfig } from 'tsup'
+import svgr from 'esbuild-plugin-svgr'
 
 export default defineConfig({
-  loader: { '.svg': 'dataurl'}
+  esbuildPlugins: [
+    svgr({
+      replaceAttrValues: { 'black': 'currentColor' }
+    })
+  ],
 });

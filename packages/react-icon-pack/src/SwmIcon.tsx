@@ -1,7 +1,13 @@
-import Air from './icons/broken/air.svg'
+import Air from './icons/broken/air.svg';
 
-export default function SwmIcon() {
+interface Props extends React.HTMLAttributes<HTMLDivElement> {
+  color?: string
+}
+
+export default function SwmIcon({ color, style, ...props }: Props) {
   return (
-      <img src={Air} width={50} height={50}></img>
+    <div style={{ ...style, color }} {...props}>
+      <Air width={50} height={50} />
+    </div>
   );
 }
