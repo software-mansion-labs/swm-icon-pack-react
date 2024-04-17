@@ -1,0 +1,13 @@
+import * as React from 'react';
+import type { SVGProps } from 'react';
+const SvgSmartphone = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M5.25 5A2.75 2.75 0 0 1 8 2.25h8A2.75 2.75 0 0 1 18.75 5v6a.75.75 0 0 1-1.5 0V5c0-.69-.56-1.25-1.25-1.25H8c-.69 0-1.25.56-1.25 1.25v2a.75.75 0 0 1-1.5 0zM6 10.25a.75.75 0 0 1 .75.75v8c0 .69.56 1.25 1.25 1.25h8c.69 0 1.25-.56 1.25-1.25v-3a.75.75 0 0 1 1.5 0v3A2.75 2.75 0 0 1 16 21.75H8A2.75 2.75 0 0 1 5.25 19v-8a.75.75 0 0 1 .75-.75m6 7a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-1.5 0V18a.75.75 0 0 1 .75-.75"
+      clipRule="evenodd"
+    />
+  </svg>
+);
+export default SvgSmartphone;

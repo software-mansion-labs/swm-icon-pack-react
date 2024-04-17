@@ -1,4 +1,4 @@
-import { Air } from './icons/broken'
+import { Air } from './icons/broken';
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
   color?: string
