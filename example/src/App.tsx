@@ -1,10 +1,11 @@
-import { SwmIcon } from '@swm-labs/swm-icon-pack-react';
+import { Icon } from '@swm-labs/swm-icon-pack-react';
 
 function App() {
   return (
     <div style={{ width: '100vw', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'blue' }}>
-      <SwmIcon />
-      <SwmIcon color='red' />
+      <Icon name='Air' variant='curved' size={100} />
+      <Icon name='Alarm' color='red' />
+      <Icon name='Apple' color='green' variant='outline' />
     </div>
   );
 }

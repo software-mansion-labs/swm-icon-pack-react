@@ -1,1 +1,1 @@
-export { default as SwmIcon } from "./SwmIcon";
+export { default as Icon } from "./Icon";
