@@ -6,7 +6,7 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "build": "tsup src/index.ts",
     "lint": "tsc && eslint src/**/*.{ts,tsx}",
     "ci": "pnpm run lint && pnpm run build",
     "prepublishOnly": "pnpm run ci"
