@@ -1,3 +1,7 @@
-export function SwmIcon() {
-  return <div style={{ width: '50px', height: '50px', backgroundColor: 'darkblue' }}></div>;
+import Air from './icons/broken/air.svg'
+
+export default function SwmIcon() {
+  return (
+      <img src={Air} width={50} height={50}></img>
+  );
 }
