@@ -6,16 +6,18 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts",
-    "lint": "tsc && eslint src/**/*.{ts,tsx}",
-    "ci": "pnpm run lint && pnpm run build",
-    "prepublishOnly": "pnpm run ci"
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc && eslint src/**",
+    "ci": "pnpm run generateIcons && pnpm run lint && pnpm run build",
+    "prepublishOnly": "pnpm run ci",
+    "generateIcons": "npx @svgr/cli --typescript --replace-attr-values '#000'='currentColor' --out-dir src/icons -- ../../assets/icons"
   },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@svgr/cli": "^8.1.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.11.0",
@@ -26,8 +28,5 @@
     "react-dom": "^18.2.0",
     "tsup": "^8.0.2",
     "typescript": "^5.0.2"
-  },
-  "dependencies": {
-    "esbuild-plugin-svgr": "^2.1.0"
   }
 }
