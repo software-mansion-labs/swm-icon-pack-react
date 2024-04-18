@@ -1,16 +1,17 @@
 {
-  "name": "swm-icon-pack-react-monorepo",
+  "name": "@swm-labs/swm-icon-pack-react",
   "version": "1.0.0",
-  "description": "Monorepo for Software Mansion Icon Pack React",
+  "description": "Software Mansion Icon Pack",
   "private": true,
   "type": "module",
+  "main": "./react-icon-pack/dist",
+  "module": "./react-icon-pack/dist",
   "license": "ISC",
-  "packageManager": "pnpm@8.10.4",
-  "engines": {
-    "pnpm": "^8.0.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/software-mansion-labs/swm-icon-pack-react.git"
+  },
+  "scripts": {
+    "build": "cd react-icon-pack && yarn build"
   }
 }
