@@ -10,7 +10,7 @@
     "lint": "tsc && eslint src/**",
     "ci": "pnpm run generateIcons && pnpm run lint && pnpm run build",
     "prepublishOnly": "pnpm run ci",
-    "generateIcons": "npx @svgr/cli --typescript --icon --replace-attr-values '#000'='currentColor' --out-dir src/icons -- ../../assets/icons"
+    "generateIcons": "npx @svgr/cli --typescript --icon --replace-attr-values '#000'='currentColor' --out-dir src/icons -- ../../icons"
   },
   "peerDependencies": {
     "react": "^18.2.0",

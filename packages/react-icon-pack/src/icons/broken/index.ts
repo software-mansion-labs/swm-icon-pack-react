@@ -1,6 +1,5 @@
 export { default as Air } from './Air';
 export { default as Alarm } from './Alarm';
-export { default as Apple } from './Apple';
 export { default as ArrowCircleDown } from './ArrowCircleDown';
 export { default as ArrowCircleLeft } from './ArrowCircleLeft';
 export { default as ArrowCircleRight } from './ArrowCircleRight';
