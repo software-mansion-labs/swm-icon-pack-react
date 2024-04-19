@@ -1,7 +1,7 @@
 import React, { SVGProps } from 'react';
-import * as BrokenIcons from './icons/broken';
-import * as OutlineIcons from './icons/outline';
-import * as CurvedIcons from './icons/curved';
+import * as BrokenIcons from '../dist/icons/broken';
+import * as OutlineIcons from '../dist/icons/outline';
+import * as CurvedIcons from '../dist/icons/curved';
 
 const iconVariants = {
   broken: BrokenIcons,

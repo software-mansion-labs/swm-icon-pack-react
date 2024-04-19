@@ -7,7 +7,7 @@
     "lint": "tsc && eslint src/**",
     "ci": "yarn generateIcons && yarn lint && yarn build",
     "prepublishOnly": "yarn ci",
-    "generateIcons": "npx @svgr/cli --typescript --icon --replace-attr-values '#000'='currentColor' --out-dir src/icons -- ../icons"
+    "generateIcons": "npx @svgr/cli --typescript --icon --replace-attr-values '#000'='currentColor' --out-dir dist/icons -- ../icons"
   },
   "peerDependencies": {
     "react": "^18.2.0",
