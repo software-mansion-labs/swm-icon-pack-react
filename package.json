@@ -12,6 +12,11 @@
     "url": "git+https://github.com/software-mansion-labs/swm-icon-pack-react.git"
   },
   "scripts": {
-    "build": "cd react-icon-pack && yarn build"
+    "build": "cd react-icon-pack && yarn build",
+    "generate-fonts": "./cli.js"
+  },
+  "devDependencies": {
+    "svgtofont": "^4.2.0",
+    "yargs": "^17.7.2"
   }
 }
