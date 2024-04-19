@@ -26,17 +26,9 @@ React component for swm-icon-pack
 
 ## Installation
 
-   from npm
-
-   ```bash
-   npm install swm-icon-pack-react
-   ```
-
-   from yarn
-
-   ```bash
-   yarn add swm-icon-pack-react
-   ```
+```bash
+yarn add swm-icon-pack-react
+```
 
 ## Usage
 
