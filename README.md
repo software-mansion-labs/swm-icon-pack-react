@@ -40,7 +40,7 @@ const App = () => {
   return (
     <>
       <Icon name='ArrowRight' />;
-      <Icon name='ArrowLeft' variant='outline' size='36' color='red' />;
+      <Icon name='ArrowLeft' variant='outline' size={36} color='red' />;
     </>
   )
 };
