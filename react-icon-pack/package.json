@@ -2,15 +2,12 @@
   "name": "@swm-labs/swm-icon-pack-react",
   "version": "0.0.0",
   "license": "ISC",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc && eslint src/**",
-    "ci": "pnpm run generateIcons && pnpm run lint && pnpm run build",
-    "prepublishOnly": "pnpm run ci",
-    "generateIcons": "npx @svgr/cli --typescript --icon --replace-attr-values '#000'='currentColor' --out-dir src/icons -- ../../icons"
+    "ci": "yarn generateIcons && yarn lint && yarn build",
+    "prepublishOnly": "yarn ci",
+    "generateIcons": "npx @svgr/cli --typescript --icon --replace-attr-values '#000'='currentColor' --out-dir src/icons -- ../icons"
   },
   "peerDependencies": {
     "react": "^18.2.0",
@@ -25,6 +22,7 @@
     "@typescript-eslint/parser": "^6.11.0",
     "eslint": "^8.53.0",
     "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tsup": "^8.0.2",
