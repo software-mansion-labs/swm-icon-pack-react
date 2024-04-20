@@ -1,1 +1,1 @@
-export { SwmIcon2 } from './Icon';
+export { Icon } from './Icon';
