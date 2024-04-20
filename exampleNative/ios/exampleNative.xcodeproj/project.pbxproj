@@ -12,8 +12,12 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		24B5BCC358AB4098A9D2A776 /* swm-icons-broken.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32FE89F270474B90A2978C3F /* swm-icons-broken.ttf */; };
+		6FCBDE81688047CFBBD41A96 /* swm-icons-outline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1821CDC87F024C35B84F84D0 /* swm-icons-outline.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-exampleNative-exampleNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-exampleNative-exampleNativeTests.a */; };
+		7E26B992CFE44B288EA893F6 /* glyphmap.json in Resources */ = {isa = PBXBuildFile; fileRef = F49D4486D7BB413589026CB4 /* glyphmap.json */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		CCD2E2ECB3D7499B8438C02D /* swm-icons-curved.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D16D16508504B09BFC2E7B1 /* swm-icons-curved.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,10 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = exampleNative/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = exampleNative/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = exampleNative/main.m; sourceTree = "<group>"; };
+		1821CDC87F024C35B84F84D0 /* swm-icons-outline.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "swm-icons-outline.ttf"; path = "../node_modules/@swm-labs/swm-icon-pack-react/fonts/outline/swm-icons-outline.ttf"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-exampleNative-exampleNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-exampleNative-exampleNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D16D16508504B09BFC2E7B1 /* swm-icons-curved.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "swm-icons-curved.ttf"; path = "../node_modules/@swm-labs/swm-icon-pack-react/fonts/curved/swm-icons-curved.ttf"; sourceTree = "<group>"; };
+		32FE89F270474B90A2978C3F /* swm-icons-broken.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "swm-icons-broken.ttf"; path = "../node_modules/@swm-labs/swm-icon-pack-react/fonts/broken/swm-icons-broken.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-exampleNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exampleNative.debug.xcconfig"; path = "Target Support Files/Pods-exampleNative/Pods-exampleNative.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-exampleNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exampleNative.release.xcconfig"; path = "Target Support Files/Pods-exampleNative/Pods-exampleNative.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-exampleNative-exampleNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exampleNative-exampleNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-exampleNative-exampleNativeTests/Pods-exampleNative-exampleNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -44,6 +51,7 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = exampleNative/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-exampleNative-exampleNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exampleNative-exampleNativeTests.release.xcconfig"; path = "Target Support Files/Pods-exampleNative-exampleNativeTests/Pods-exampleNative-exampleNativeTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F49D4486D7BB413589026CB4 /* glyphmap.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = glyphmap.json; path = "../node_modules/@swm-labs/swm-icon-pack-react/fonts/broken/glyphmap.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				F3CBD9D2E40D4175A80CF66C /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -146,6 +155,18 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-exampleNative-exampleNativeTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F3CBD9D2E40D4175A80CF66C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32FE89F270474B90A2978C3F /* swm-icons-broken.ttf */,
+				1D16D16508504B09BFC2E7B1 /* swm-icons-curved.ttf */,
+				1821CDC87F024C35B84F84D0 /* swm-icons-outline.ttf */,
+				F49D4486D7BB413589026CB4 /* glyphmap.json */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +264,10 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				24B5BCC358AB4098A9D2A776 /* swm-icons-broken.ttf in Resources */,
+				CCD2E2ECB3D7499B8438C02D /* swm-icons-curved.ttf in Resources */,
+				6FCBDE81688047CFBBD41A96 /* swm-icons-outline.ttf in Resources */,
+				7E26B992CFE44B288EA893F6 /* glyphmap.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
