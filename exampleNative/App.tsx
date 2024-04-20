@@ -5,7 +5,7 @@ import {Icon} from '@swm-labs/swm-icon-pack-react';
 function App(): React.JSX.Element {
   return (
     <SafeAreaView>
-      <Icon />
+      <Icon name={'air'} />
     </SafeAreaView>
   );
 }
