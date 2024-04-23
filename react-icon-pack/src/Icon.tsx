@@ -1,7 +1,9 @@
-import React, { SVGProps } from 'react';
+import React from 'react';
 import * as BrokenIcons from '../dist/icons/broken';
 import * as OutlineIcons from '../dist/icons/outline';
 import * as CurvedIcons from '../dist/icons/curved';
+import { convertToPascalCase } from './utils';
+import { IconProps } from '../../types';
 
 const iconVariants = {
   broken: BrokenIcons,
@@ -9,19 +11,15 @@ const iconVariants = {
   curved: CurvedIcons,
 };
 
-interface Props extends SVGProps<SVGSVGElement> {
-  name: keyof (typeof BrokenIcons | typeof OutlineIcons | typeof CurvedIcons);
-  variant?: keyof typeof iconVariants;
-  color?: string;
-  size?: number;
-}
+type IconComponentName = keyof (typeof BrokenIcons | typeof OutlineIcons | typeof CurvedIcons);
 
-export default function Icon({ name, variant = 'broken', color, size = 50, ...props }: Props) {
-  return React.createElement(iconVariants[variant][name], {
+export default function Icon({ name, type = 'outline', color, size = 24 }: IconProps) {
+  const iconName = convertToPascalCase(name) as IconComponentName;
+
+  return React.createElement(iconVariants[type][iconName], {
     viewBox: '0 0 24 24',
     width: size,
     height: size,
     color,
-    ...props,
   });
 }
