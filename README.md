@@ -20,7 +20,7 @@ React component for swm-icon-pack
 
 ## Features
 
-1. Ready to use React or React Native components
+1. Ready to use React / React Native components
 2. Uses .svg under the hood in React and .ttf in React Native for optimal performance
 3. Customizable variant, size and color
 
@@ -39,8 +39,8 @@ import { Icon } from '@swm-labs/swm-icon-pack-react';
 const App = () => {
   return (
     <>
-      <Icon name='ArrowRight' />;
-      <Icon name='ArrowLeft' variant='outline' size={36} color='red' />;
+      <Icon name='arrow-right' />;
+      <Icon name='arrow-left' variant='outline' size={36} color='red' />;
     </>
   )
 };
@@ -50,16 +50,14 @@ export default App;
 
 ## Available props
 
-The component extends all the default SVGProps. The additional props are listed below:
-
 | Prop          | Type                                  | Default   | Description                                     |
 | ------------- | ------------------------------------- | --------- | ----------------------------------------------- |
 | `name` (required)       | `string`                              |           | Name of the icon you want to render                     |                      |
-| `variant`     | `outline` `broken` `curved` | `broken` | Selected variant of the icon                                |
-| `size`        | `string` `number`                     | `50`      | Width and height of the icon |                         |
-| `color`       | `string`                              | `inherit` | Color of the icon                     |
+| `variant`     | `outline` `broken` `curved` | `outline` | Selected variant of the icon                                |
+| `size`        | `number`                     | `24`      | Width and height of the icon |                         |
+| `color`       | `string`                              | `black` / `inherit` | Color of the icon                     |
 
 
 ## TODO
 
-1. Add support for React Native
+1. Add ts autocomplete to web and native implementations
