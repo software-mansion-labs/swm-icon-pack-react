@@ -13,7 +13,7 @@ const iconVariants = {
 
 type IconComponentName = keyof (typeof BrokenIcons | typeof OutlineIcons | typeof CurvedIcons);
 
-export default function Icon({ name, type = 'outline', color, size = 24 }: IconProps) {
+export function Icon({ name, type = 'outline', color, size = 24 }: IconProps) {
   const iconName = convertToPascalCase(name) as IconComponentName;
 
   return React.createElement(iconVariants[type][iconName], {
