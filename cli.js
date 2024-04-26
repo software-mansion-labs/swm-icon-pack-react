@@ -6,6 +6,20 @@ import svgtofont from 'svgtofont';
 import fs from 'fs';
 import path from 'path';
 
+const removeRedundantFiles = (outputPath) => {
+  fs.readdir(outputPath, (err, files) => {
+    if (err) throw err;
+
+    files.forEach(file => {
+      if (file === 'glyphmap.json' || file.endsWith('.ttf')) return;
+
+      fs.unlink(path.join(outputPath, file), err => {
+        if (err) console.warn('Error while deleting unused file', err);
+      });
+    });
+  });
+}
+
 const argv = yargs(hideBin(process.argv))
   .option('source', {
     alias: 's',
@@ -61,18 +75,6 @@ svgtofont({
     console.log('Error while creating fonts:', err);
   })
   .finally(() => {
-    // svgtofont creates other font files automatically, which is not configurable
-    // lines below should remove them completely
-    fs.readdir(outputPath, (err, files) => {
-      if (err) throw err;
-
-      files.forEach(file => {
-        if (file === 'glyphmap.json' || file.endsWith('.ttf')) return;
-
-        fs.unlink(path.join(outputPath, file), err => {
-          if (err) console.warn('Error while deleting unused file', err);
-        });
-      });
-    });
+    removeRedundantFiles(outputPath)
   });
 
