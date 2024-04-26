@@ -6,6 +6,7 @@
   "type": "module",
   "main": "./react-icon-pack/dist",
   "module": "./react-icon-pack/dist",
+  "react-native": "./react-native-icon-pack/src/index.ts",
   "license": "ISC",
   "repository": {
     "type": "git",
