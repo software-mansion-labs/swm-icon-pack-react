@@ -1,0 +1,35 @@
+{
+  "name": "@swm-labs/swm-icon-pack-react",
+  "version": "0.0.0",
+  "license": "ISC",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc && eslint src/**",
+    "ci": "yarn generateIcons && yarn lint && yarn build",
+    "prepublishOnly": "yarn ci",
+    "generateIcons": "npx @svgr/cli --typescript --icon --replace-attr-values '#000'='currentColor' --out-dir dist/icons -- ../icons"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^8.1.0",
+    "@types/lodash.camelcase": "^4.3.9",
+    "@types/lodash.startcase": "^4.4.9",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "lodash.camelcase": "^4.3.0",
+    "lodash.startcase": "^4.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.0.2"
+  }
+}
