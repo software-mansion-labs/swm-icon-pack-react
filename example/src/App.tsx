@@ -12,9 +12,9 @@ function App() {
         color: 'blue',
       }}
     >
-      <Icon name="air" variant="curved" size={100} />
+      <Icon name="air" type="curved" size={100} />
       <Icon name="alarm" color="red" />
-      <Icon name="arrow-right" color="green" variant="broken" />
+      <Icon name="arrow-right" color="green" type="broken" />
     </div>
   );
 }
