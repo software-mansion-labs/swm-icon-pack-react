@@ -15,7 +15,7 @@ declare interface IconProps {
    */
   size?: number;
   /**
-   * Default: 'fff'
+   * Default: '000'
    */
   color?: string
 }
