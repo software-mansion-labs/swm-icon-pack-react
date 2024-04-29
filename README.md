@@ -40,7 +40,7 @@ const App = () => {
   return (
     <>
       <Icon name='arrow-right' />;
-      <Icon name='arrow-left' variant='outline' size={36} color='red' />;
+      <Icon name='arrow-left' type='outline' size={36} color='red' />;
     </>
   )
 };
@@ -53,7 +53,7 @@ export default App;
 | Prop          | Type                                  | Default   | Description                                     |
 | ------------- | ------------------------------------- | --------- | ----------------------------------------------- |
 | `name` (required)       | `string`                              |           | Name of the icon you want to render                     |                      |
-| `variant`     | `outline` `broken` `curved` | `outline` | Selected variant of the icon                                |
+| `type`     | `outline` `broken` `curved` | `outline` | Selected type of the icon                                |
 | `size`        | `number`                     | `24`      | Width and height of the icon |                         |
 | `color`       | `string`                              | `black` / `inherit` | Color of the icon                     |
 
