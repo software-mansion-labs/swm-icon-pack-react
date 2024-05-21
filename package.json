@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@types/react": "^18.2.79",
+    "oslllo-svg-fixer": "^4.0.1",
     "svgtofont": "^4.2.0",
     "typescript": "^5.4.5",
     "yargs": "^17.7.2"

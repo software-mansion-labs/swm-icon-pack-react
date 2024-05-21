@@ -7,15 +7,15 @@
     },
     {
       "path": "node_modules/@swmansion/icons/fonts/broken/swm-icons-broken.ttf",
-      "sha1": "711a7a16f0a15e565a0635b99a394547d59238f8"
+      "sha1": "39ef8477a4d3e05183be3408e9b42b4ef163c3bc"
     },
     {
       "path": "node_modules/@swmansion/icons/fonts/curved/swm-icons-curved.ttf",
-      "sha1": "5e85567fddc56e1932fd422a8645af6ac3dd0799"
+      "sha1": "db1696349be336c02cb113356ac73f1d988a4949"
     },
     {
       "path": "node_modules/@swmansion/icons/fonts/outline/swm-icons-outline.ttf",
-      "sha1": "fc30b7835504d447dd51248a3f7cce8b07670647"
+      "sha1": "463ed66a84a3e1e7743d495260d7fe41d1ca5534"
     }
   ]
 }
