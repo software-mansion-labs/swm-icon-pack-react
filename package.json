@@ -13,6 +13,12 @@
     "type": "git",
     "url": "git+https://github.com/software-mansion-labs/swm-icon-pack-react.git"
   },
+  "files": [
+    "react-native-icon-pack/",
+    "react-icon-pack/dist/",
+    "fonts/",
+    "types/"
+  ],
   "scripts": {
     "lint": "eslint \"*.{js,ts,tsx}\" && tsc --noEmit",
     "lint:all": "yarn lint && yarn lint:native && yarn lint:web && yarn lint:example && yarn lint:exampleNative",
