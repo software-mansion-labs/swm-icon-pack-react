@@ -1,13 +1,13 @@
-const {getDefaultConfig} = require('@react-native/metro-config');
-const {mergeConfig} = require('metro-config');
+const { getDefaultConfig } = require('@react-native/metro-config')
+const { mergeConfig } = require('metro-config')
 
-const path = require('path');
-const exclusionList = require('metro-config/src/defaults/exclusionList');
-const escape = require('escape-string-regexp');
-const pack = require('../react-native-icon-pack/package.json');
+const path = require('path')
+const exclusionList = require('metro-config/src/defaults/exclusionList')
+const escape = require('escape-string-regexp')
+const pack = require('../react-native-icon-pack/package.json')
 
-const root = path.resolve(__dirname, '..');
-const modules = Object.keys(pack.peerDependencies);
+const root = path.resolve(__dirname, '..')
+const modules = Object.keys(pack.peerDependencies)
 
 const config = {
   projectRoot: __dirname,
@@ -18,23 +18,17 @@ const config = {
   resolver: {
     blacklistRE: exclusionList(
       modules.map(
-        m =>
+        (m) =>
           new RegExp(
-            `^${escape(
-              path.join(
-                path.resolve(__dirname, '../react-native-icon-pack'),
-                'node_modules',
-                m,
-              ),
-            )}\\/.*$`,
+            `^${escape(path.join(path.resolve(__dirname, '../react-native-icon-pack'), 'node_modules', m))}\\/.*$`,
           ),
       ),
     ),
 
     extraNodeModules: modules.reduce(
       (acc, name) => {
-        acc[name] = path.join(__dirname, 'node_modules', name);
-        return acc;
+        acc[name] = path.join(__dirname, 'node_modules', name)
+        return acc
       },
       {
         '@swmansion/icons': path.resolve(__dirname, '..'),
@@ -51,6 +45,6 @@ const config = {
       },
     }),
   },
-};
+}
 
-module.exports = mergeConfig(getDefaultConfig(__dirname), config);
+module.exports = mergeConfig(getDefaultConfig(__dirname), config)

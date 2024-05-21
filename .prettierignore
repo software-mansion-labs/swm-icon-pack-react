@@ -1,0 +1,10 @@
+**/react-native-icon-pack
+**/react-icon-pack
+**/example
+**/exampleNative
+
+**/fonts
+**/assets
+**/node_modules
+
+yarn.lock

@@ -14,13 +14,38 @@
     "url": "git+https://github.com/software-mansion-labs/swm-icon-pack-react.git"
   },
   "scripts": {
+    "lint": "eslint \"*.{js,ts,tsx}\" && tsc --noEmit",
+    "lint:all": "yarn lint && yarn lint:native && yarn lint:web && yarn lint:example && yarn lint:exampleNative",
+    "lint:native": "cd react-native-icon-pack && yarn lint",
+    "lint:web": "cd react-icon-pack && yarn lint",
+    "lint:example": "cd example && yarn lint",
+    "lint:exampleNative": "cd exampleNative && yarn lint",
+    "format": "prettier . --check",
+    "format:all": "yarn format && yarn format:native && yarn format:web && yarn format:example && yarn format:exampleNative",
+    "format:native": "cd react-native-icon-pack && yarn format",
+    "format:web": "cd react-icon-pack && yarn format",
+    "format:example": "cd example && yarn format",
+    "format:exampleNative": "cd exampleNative && yarn format:fix",
+    "format:fix": "prettier . --write",
+    "format:native:fix": "cd react-native-icon-pack && yarn format:fix",
+    "format:web:fix": "cd react-icon-pack && yarn format:fix",
+    "format:example:fix": "cd example && yarn format:fix",
+    "format:exampleNative:fix": "cd exampleNative && yarn format:fix",
+    "format:all:fix": "yarn format:fix && yarn format:native:fix && yarn format:web:fix && yarn format:example:fix && yarn format:exampleNative:fix",
     "build": "cd react-icon-pack && yarn build",
     "generate-fonts": "./cli.js"
   },
   "devDependencies": {
+    "@eslint/js": "^9.3.0",
     "@types/react": "^18.2.79",
+    "eslint": "8.x",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.34.1",
+    "globals": "^15.3.0",
+    "prettier": "3.2.5",
     "svgtofont": "^4.2.0",
     "typescript": "^5.4.5",
+    "typescript-eslint": "^7.10.0",
     "yargs": "^17.7.2"
   }
 }

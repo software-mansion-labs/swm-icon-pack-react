@@ -1,1 +1,1 @@
-export { convertToPascalCase } from './convertToPascalCase';
+export { convertToPascalCase } from './convertToPascalCase'
