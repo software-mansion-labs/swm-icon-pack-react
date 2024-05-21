@@ -12,12 +12,12 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		5DE109A448114F8E9005860B /* swm-icons-curved.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93DAEDD4ACEF4068851652CA /* swm-icons-curved.ttf */; };
-		65E622A7E5B64711B4324A5A /* swm-icons-broken.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56DB7F947224437D9B090A3E /* swm-icons-broken.ttf */; };
 		73CF25869F3149F2A48B6177 /* glyphmap.json in Resources */ = {isa = PBXBuildFile; fileRef = 611AD43FD6074BFFB3459F3F /* glyphmap.json */; };
 		7699B88040F8A987B510C191 /* libPods-exampleNative-exampleNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-exampleNative-exampleNativeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		BD8CAF0A56EE4049A2395E2D /* swm-icons-outline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D01B3CD918974E9D973B276A /* swm-icons-outline.ttf */; };
+		5BB26FDAC38646C98E1FC821 /* swm-icons-broken.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 136303282231447EB75A3000 /* swm-icons-broken.ttf */; };
+		B081F16414B04A13BCB231EA /* swm-icons-curved.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6F5A75DF83349B2B5296616 /* swm-icons-curved.ttf */; };
+		E120196DEFB24F43AF1E3DAD /* swm-icons-outline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFACFD2007DE4FB5B16E3BAB /* swm-icons-outline.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,16 +42,16 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = exampleNative/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-exampleNative-exampleNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-exampleNative-exampleNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-exampleNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exampleNative.debug.xcconfig"; path = "Target Support Files/Pods-exampleNative/Pods-exampleNative.debug.xcconfig"; sourceTree = "<group>"; };
-		56DB7F947224437D9B090A3E /* swm-icons-broken.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "swm-icons-broken.ttf"; path = "../node_modules/@swmansion/icons/fonts/broken/swm-icons-broken.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-exampleNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exampleNative.release.xcconfig"; path = "Target Support Files/Pods-exampleNative/Pods-exampleNative.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-exampleNative-exampleNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exampleNative-exampleNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-exampleNative-exampleNativeTests/Pods-exampleNative-exampleNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-exampleNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-exampleNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		611AD43FD6074BFFB3459F3F /* glyphmap.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = glyphmap.json; path = "../node_modules/@swmansion/icons/fonts/broken/glyphmap.json"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = exampleNative/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-exampleNative-exampleNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exampleNative-exampleNativeTests.release.xcconfig"; path = "Target Support Files/Pods-exampleNative-exampleNativeTests/Pods-exampleNative-exampleNativeTests.release.xcconfig"; sourceTree = "<group>"; };
-		93DAEDD4ACEF4068851652CA /* swm-icons-curved.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "swm-icons-curved.ttf"; path = "../node_modules/@swmansion/icons/fonts/curved/swm-icons-curved.ttf"; sourceTree = "<group>"; };
-		D01B3CD918974E9D973B276A /* swm-icons-outline.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "swm-icons-outline.ttf"; path = "../node_modules/@swmansion/icons/fonts/outline/swm-icons-outline.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		136303282231447EB75A3000 /* swm-icons-broken.ttf */ = {isa = PBXFileReference; name = "swm-icons-broken.ttf"; path = "../node_modules/@swmansion/icons/fonts/broken/swm-icons-broken.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B6F5A75DF83349B2B5296616 /* swm-icons-curved.ttf */ = {isa = PBXFileReference; name = "swm-icons-curved.ttf"; path = "../node_modules/@swmansion/icons/fonts/curved/swm-icons-curved.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AFACFD2007DE4FB5B16E3BAB /* swm-icons-outline.ttf */ = {isa = PBXFileReference; name = "swm-icons-outline.ttf"; path = "../node_modules/@swmansion/icons/fonts/outline/swm-icons-outline.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,10 +160,10 @@
 		F3CBD9D2E40D4175A80CF66C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				56DB7F947224437D9B090A3E /* swm-icons-broken.ttf */,
-				93DAEDD4ACEF4068851652CA /* swm-icons-curved.ttf */,
-				D01B3CD918974E9D973B276A /* swm-icons-outline.ttf */,
 				611AD43FD6074BFFB3459F3F /* glyphmap.json */,
+				136303282231447EB75A3000 /* swm-icons-broken.ttf */,
+				B6F5A75DF83349B2B5296616 /* swm-icons-curved.ttf */,
+				AFACFD2007DE4FB5B16E3BAB /* swm-icons-outline.ttf */,
 			);
 			name = Resources;
 			path = "";
@@ -264,10 +264,10 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				65E622A7E5B64711B4324A5A /* swm-icons-broken.ttf in Resources */,
-				5DE109A448114F8E9005860B /* swm-icons-curved.ttf in Resources */,
-				BD8CAF0A56EE4049A2395E2D /* swm-icons-outline.ttf in Resources */,
 				73CF25869F3149F2A48B6177 /* glyphmap.json in Resources */,
+				5BB26FDAC38646C98E1FC821 /* swm-icons-broken.ttf in Resources */,
+				B081F16414B04A13BCB231EA /* swm-icons-curved.ttf in Resources */,
+				E120196DEFB24F43AF1E3DAD /* swm-icons-outline.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
