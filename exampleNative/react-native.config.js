@@ -9,7 +9,7 @@ module.exports = {
     path.join(
       __dirname,
       'node_modules',
-      '@swm-labs/swm-icon-pack-react',
+      '@swmansion/icons',
       'fonts',
     ),
   ],

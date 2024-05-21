@@ -428,7 +428,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@swm-labs/swm-icon-pack-react@link:..":
+"@swmansion/icons@link:..":
   version "0.0.0"
   uid ""
 

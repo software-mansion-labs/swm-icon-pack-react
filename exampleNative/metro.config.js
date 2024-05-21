@@ -37,7 +37,7 @@ const config = {
         return acc;
       },
       {
-        '@swm-labs/swm-icon-pack-react': path.resolve(__dirname, '..'),
+        '@swmansion/icons': path.resolve(__dirname, '..'),
       },
     ),
     nodeModulesPath: [path.resolve(path.join(__dirname, './node_modules'))],

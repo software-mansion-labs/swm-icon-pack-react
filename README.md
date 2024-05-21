@@ -34,7 +34,7 @@ yarn add swm-icon-pack-react
 
 ```jsx
 import React from 'react';
-import { Icon } from '@swm-labs/swm-icon-pack-react';
+import { Icon } from '@swmansion/icons';
 
 const App = () => {
   return (

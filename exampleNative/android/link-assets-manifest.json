@@ -2,19 +2,19 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "node_modules/@swm-labs/swm-icon-pack-react/fonts/broken/glyphmap.json",
+      "path": "node_modules/@swmansion/icons/fonts/broken/glyphmap.json",
       "sha1": "7d31b5a94939776c53aa49d1d6547742a1a6b10d"
     },
     {
-      "path": "node_modules/@swm-labs/swm-icon-pack-react/fonts/broken/swm-icons-broken.ttf",
+      "path": "node_modules/@swmansion/icons/fonts/broken/swm-icons-broken.ttf",
       "sha1": "711a7a16f0a15e565a0635b99a394547d59238f8"
     },
     {
-      "path": "node_modules/@swm-labs/swm-icon-pack-react/fonts/curved/swm-icons-curved.ttf",
+      "path": "node_modules/@swmansion/icons/fonts/curved/swm-icons-curved.ttf",
       "sha1": "5e85567fddc56e1932fd422a8645af6ac3dd0799"
     },
     {
-      "path": "node_modules/@swm-labs/swm-icon-pack-react/fonts/outline/swm-icons-outline.ttf",
+      "path": "node_modules/@swmansion/icons/fonts/outline/swm-icons-outline.ttf",
       "sha1": "fc30b7835504d447dd51248a3f7cce8b07670647"
     }
   ]
