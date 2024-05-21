@@ -1,4 +1,4 @@
-import { Icon } from '@swm-labs/swm-icon-pack-react';
+import { Icon } from '@swmansion/icons';
 
 function App() {
   return (

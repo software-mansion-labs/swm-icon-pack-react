@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@swm-labs/swm-icon-pack-react": "link:../",
+    "@swmansion/icons": "link:../",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

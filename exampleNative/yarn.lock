@@ -1901,7 +1901,7 @@
   dependencies:
     "@sinonjs/commons" "^3.0.0"
 
-"@swm-labs/swm-icon-pack-react@link:..":
+"@swmansion/icons@link:..":
   version "0.0.0"
   uid ""
 
