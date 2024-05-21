@@ -3,7 +3,7 @@ import * as BrokenIcons from '../dist/icons/broken';
 import * as OutlineIcons from '../dist/icons/outline';
 import * as CurvedIcons from '../dist/icons/curved';
 import { convertToPascalCase } from './utils';
-import { IconProps } from '../../types';
+import { type IconProps } from '../../types';
 
 const iconVariants = {
   broken: BrokenIcons,
