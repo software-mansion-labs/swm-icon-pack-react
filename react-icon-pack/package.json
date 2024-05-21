@@ -9,7 +9,7 @@
     "format": "prettier . --check",
     "format:write": "prettier . --write",
     "prepublishOnly": "yarn ci",
-    "generateIcons": "npx @svgr/cli --typescript --icon --replace-attr-values '#000'='currentColor' --jsx-runtime='automatic' --out-dir dist/icons -- ../icons"
+    "generateIcons": "npx @svgr/cli --typescript --icon --replace-attr-values '#001A72'='currentColor' --jsx-runtime='automatic' --out-dir dist/icons -- ../icons"
   },
   "peerDependencies": {
     "react": "^18.2.0",
