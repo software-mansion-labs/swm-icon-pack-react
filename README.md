@@ -1,6 +1,5 @@
 # swm-icon-pack-react
-
-React component for swm-icon-pack
+React component for swm-icon-pack 
 
 ![cover](/images/intro.png)
 
@@ -34,29 +33,30 @@ yarn add swm-icon-pack-react
 ## Usage
 
 ```jsx
-import React from 'react'
-import { Icon } from '@swmansion/icons'
+import React from 'react';
+import { Icon } from '@swmansion/icons';
 
 const App = () => {
   return (
     <>
-      <Icon name="arrow-right" />;
-      <Icon name="arrow-left" type="outline" size={36} color="red" />;
+      <Icon name='arrow-right' />;
+      <Icon name='arrow-left' type='outline' size={36} color='red' />;
     </>
   )
-}
+};
 
-export default App
+export default App;
 ```
 
 ## Available props
 
-| Prop              | Type                        | Default             | Description                         |
-| ----------------- | --------------------------- | ------------------- | ----------------------------------- | --- |
-| `name` (required) | `string`                    |                     | Name of the icon you want to render |     |
-| `type`            | `outline` `broken` `curved` | `outline`           | Selected type of the icon           |
-| `size`            | `number`                    | `24`                | Width and height of the icon        |     |
-| `color`           | `string`                    | `black` / `inherit` | Color of the icon                   |
+| Prop          | Type                                  | Default   | Description                                     |
+| ------------- | ------------------------------------- | --------- | ----------------------------------------------- |
+| `name` (required)       | `string`                              |           | Name of the icon you want to render                     |                      |
+| `type`     | `outline` `broken` `curved` | `outline` | Selected type of the icon                                |
+| `size`        | `number`                     | `24`      | Width and height of the icon |                         |
+| `color`       | `string`                              | `black` / `inherit` | Color of the icon                     |
+
 
 ## TODO
 

@@ -6,5 +6,6 @@
 **/fonts
 **/assets
 **/node_modules
+*.md
 
 yarn.lock
