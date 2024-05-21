@@ -1,4 +1,4 @@
-import { Icon } from '@swmansion/icons';
+import { Icon } from '@swmansion/icons'
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <Icon name="alarm" color="red" />
       <Icon name="arrow-right" color="green" type="broken" />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

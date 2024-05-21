@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "react-native": "./src/index.ts",
   "scripts": {
-    "typecheck": "tsc --noEmit",
-    "lint": "eslint \"**/*.{js,ts,tsx}\""
+    "lint": "eslint \"**/*.{js,ts,tsx}\" && tsc --noEmit",
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write"
   },
   "keywords": [
     "react-native",
@@ -12,15 +13,19 @@
     "android"
   ],
   "devDependencies": {
+    "@eslint/js": "^9.3.0",
     "@react-native/eslint-config": "^0.73.1",
     "@types/react": "^18.2.44",
-    "eslint": "^8.51.0",
-    "eslint-config-prettier": "^9.0.0",
+    "eslint": "8.x",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.0.1",
-    "prettier": "^3.0.3",
+    "eslint-plugin-react": "^7.34.1",
+    "globals": "^15.3.0",
+    "prettier": "3.2.5",
     "react": "18.2.0",
     "react-native": "0.73.6",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "typescript-eslint": "^7.10.0"
   },
   "resolutions": {
     "@types/react": "^18.2.44"
