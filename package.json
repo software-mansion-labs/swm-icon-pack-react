@@ -17,7 +17,10 @@
   },
   "files": [
     "react-native-icon-pack/src/",
-    "react-icon-pack/dist/",
+    "react-icon-pack/dist/index.d.mts",
+    "react-icon-pack/dist/index.d.ts",
+    "react-icon-pack/dist/index.js",
+    "react-icon-pack/dist/index.mjs",
     "fonts/",
     "types/"
   ],
@@ -40,6 +43,7 @@
     "format:example:fix": "cd example && yarn format:fix",
     "format:exampleNative:fix": "cd exampleNative && yarn format:fix",
     "format:all:fix": "yarn format:fix && yarn format:native:fix && yarn format:web:fix && yarn format:example:fix && yarn format:exampleNative:fix",
+    "prebuild": "cd react-icon-pack && yarn && cd ..",
     "build": "cd react-icon-pack && yarn build",
     "generate-fonts": "./cli.js"
   },

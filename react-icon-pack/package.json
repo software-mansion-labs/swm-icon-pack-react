@@ -2,9 +2,9 @@
   "name": "react-icon-pack",
   "version": "0.0.0",
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "build": "yarn generateIcons && tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc && eslint src/**",
-    "ci": "yarn generateIcons && yarn lint && yarn build",
+    "ci": "yarn lint && yarn build",
     "format": "prettier . --check",
     "format:write": "prettier . --write",
     "prepublishOnly": "yarn ci",
