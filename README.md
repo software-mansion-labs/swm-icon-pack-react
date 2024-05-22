@@ -30,7 +30,7 @@ React and React Native components for Software Mansion icon pack.
 yarn add @swmansion/icons
 ```
 
-### React Native
+### Bare React Native
 1. Install library
 
 ```bash
@@ -52,7 +52,7 @@ module.exports = {
 npx react-native-asset
 ```
 
-### Expo
+### Expo managed workflow
 1. Install library
 
 ```bash
@@ -77,7 +77,7 @@ yarn add @swmansion/icons
   }
 }
 ```
-3. Remember to rebuild native part of your expo code.
+3. Remember to rebuild native part of your app.
 
 ## Usage
 
