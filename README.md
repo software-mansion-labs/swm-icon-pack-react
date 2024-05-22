@@ -1,34 +1,57 @@
-# swm-icon-pack-react
-React component for swm-icon-pack 
+# @swmansion/icons
+React and React Native components for Software Mansion icon pack.
 
-![cover](/images/intro.png)
+[Check out the web Example app](https://github.com/software-mansion-labs/swm-icon-pack-react/tree/main/example)
 
-`swm-icon-pack-react` enables Software Mansion Icon Pack usage in your React app
-
-[Check out the Example app](https://github.com/software-mansion-labs/swm-icon-pack-react/tree/main/example)
+[Check out the native Example app](https://github.com/software-mansion-labs/swm-icon-pack-react/tree/main/exampleNative)
 
 - [Browse icons](#browse-icons)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Available props](#available-props)
-- [TODO](#todo)
+- [Contributing](#contributing)
 
 ## Browse icons
 
-[Check out the icon pack on Figma](https://www.figma.com/community/file/942053544758339202/swm-icon-pack)
+[Check out the swm-icon-pack on Figma](https://www.figma.com/community/file/942053544758339202/swm-icon-pack)
 
 ## Features
 
-1. Ready to use React / React Native components
-2. Uses .svg under the hood in React and .ttf in React Native for optimal performance
-3. Customizable variant, size and color
+1. Ready to use React / React Native components.
+2. Uses .svg under the hood in React and .ttf in React Native for optimal performance.
+3. Customizable variant, size and color.
 
 ## Installation
+### React
+1. Install library
 
 ```bash
-yarn add swm-icon-pack-react
+yarn add @swmansion/icons
 ```
+
+### React Native
+1. Install library
+
+```bash
+yarn add @swmansion/icons
+```
+2. On iOS and Android you also have to link fonts with your native code. The easiest way to do that is creating `react-native.config.js` file at the root of your project with:
+
+```javascript
+const path = require('path')
+
+module.exports = {
+  project: {},
+  assets: [path.join(__dirname, 'node_modules', '@swmansion/icons', 'fonts')],
+}
+```
+3. Link assets:
+
+```bash
+npx react-native-asset
+```
+
 
 ## Usage
 
@@ -57,7 +80,19 @@ export default App;
 | `size`        | `number`                     | `24`      | Width and height of the icon |                         |
 | `color`       | `string`                              | `black` / `inherit` | Color of the icon                     |
 
+## Contributing
 
-## TODO
+### Updating icons
+1. Export icons from Figma in SVG format.
+2. Put icons in the proper subdirectory inside `icons/`.
+3. Convert svg icons to font. Remember to replace `iconType` and `font-name` with proper values:
+```bash
+yarn generate-icons -i icons/iconType -o fonts/iconType -f font-name
+```
+4. Rebuild library.
 
-1. Add ts autocomplete to web and native implementations
+### Adding new icon variant
+1. Repeat steps 1-3 from [updating icons section](#updating-icons). Remember to create new subdirectory inside `icons/`.
+2. Add icons config to the `iconMap` in `/react-native-icon-pack/src/Icon/Icon.tsx`.
+3. Add icons config to the `iconVariants` in `/react-icon-pack/src/Icon.tsx`.
+4. Rebuild library.
