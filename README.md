@@ -30,7 +30,7 @@ React and React Native components for Software Mansion icon pack.
 yarn add @swmansion/icons
 ```
 
-### React Native
+### Bare React Native
 1. Install library
 
 ```bash
@@ -52,6 +52,32 @@ module.exports = {
 npx react-native-asset
 ```
 
+### Expo managed workflow
+1. Install library
+
+```bash
+yarn add @swmansion/icons
+```
+2. Link icon fonts with native code. Follow Expo [instruction](https://docs.expo.dev/develop/user-interface/fonts/#use-a-custom-font). When you are using config plugins with SDK 50 and above you can just install `expo-font` and configure it in `app.json`:
+```json
+{
+  "expo": {
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./node_modules/@swmansion/icons/fonts/broken/swm-icons-broken.ttf",
+            "./node_modules/@swmansion/icons/fonts/outline/swm-icons-outline.ttf",
+            "./node_modules/@swmansion/icons/fonts/curved/swm-icons-curved.ttf"
+          ]
+        }
+      ]
+    ]
+  }
+}
+```
+3. Remember to rebuild native part of your app.
 
 ## Usage
 
