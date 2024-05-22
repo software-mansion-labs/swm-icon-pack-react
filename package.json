@@ -2,16 +2,18 @@
   "name": "@swmansion/icons",
   "version": "0.0.1",
   "description": "Software Mansion Icon Pack",
-  "private": true,
   "type": "module",
   "main": "./react-icon-pack/dist",
   "module": "./react-icon-pack/dist",
   "react-native": "./react-native-icon-pack/src/index.ts",
   "types": "./types/index.d.ts",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/software-mansion-labs/swm-icon-pack-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/software-mansion-labs/swm-icon-pack-react/issues"
   },
   "files": [
     "react-native-icon-pack/src/",
