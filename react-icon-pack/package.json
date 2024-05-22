@@ -1,7 +1,6 @@
 {
   "name": "react-icon-pack",
   "version": "0.0.0",
-  "license": "ISC",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc && eslint src/**",
