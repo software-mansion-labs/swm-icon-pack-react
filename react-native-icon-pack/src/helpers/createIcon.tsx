@@ -19,7 +19,7 @@ export const createIcon = (glyphMap: GlyphMap, fontFamily: string, fontFile: str
 
   class Icon extends PureComponent<IconProps> {
     static defaultProps = {
-      size: 12,
+      size: 24,
       color: '#000',
       allowFontScaling: false,
     }
