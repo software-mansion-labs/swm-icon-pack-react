@@ -1,0 +1,29 @@
+name: Validate Example
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/validate-example.yaml'
+      - 'example/'
+  pull_request:
+    paths:
+      - '.github/workflows/validate-example.yaml'
+      - 'example/'
+  merge_group:
+    branches:
+      - main
+
+jobs:
+  check:
+    if: github.repository == 'software-mansion-labs/swm-icon-pack-react'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: cd example && yarn
+      - name: Prettier check
+        run: yarn format:example
+      - name: Eslint check
+        run: yarn lint:example
