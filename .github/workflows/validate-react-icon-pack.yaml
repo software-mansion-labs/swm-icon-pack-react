@@ -23,6 +23,8 @@ jobs:
 
       - name: Install dependencies
         run: cd react-icon-pack && yarn
+      - name: Build dist
+        run: cd react-icon-pack && yarn build
       - name: Prettier check
         run: yarn format:web
       - name: Eslint check
