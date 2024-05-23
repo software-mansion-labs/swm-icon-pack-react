@@ -1,0 +1,29 @@
+name: Validate React Icon Pack
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/validate-react-icon-pack.yaml'
+      - 'react-icon-pack/'
+  pull_request:
+    paths:
+      - '.github/workflows/validate-react-icon-pack.yaml'
+      - 'react-icon-pack/'
+  merge_group:
+    branches:
+      - main
+
+jobs:
+  check:
+    if: github.repository == 'software-mansion-labs/swm-icon-pack-react'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: cd react-icon-pack && yarn
+      - name: Prettier check
+        run: yarn format:web
+      - name: Eslint check
+        run: yarn lint:web
