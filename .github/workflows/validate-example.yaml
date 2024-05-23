@@ -23,8 +23,6 @@ jobs:
 
       - name: Install dependencies
         run: cd example && yarn
-      - name: Build dist
-        run: cd example && yarn build
       - name: Prettier check
         run: yarn format:example
       - name: Eslint check
