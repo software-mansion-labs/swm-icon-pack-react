@@ -67,5 +67,8 @@
     "github": {
       "release": true
     }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }
