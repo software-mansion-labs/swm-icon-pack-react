@@ -88,8 +88,8 @@ import { Icon } from '@swmansion/icons';
 const App = () => {
   return (
     <>
-      <Icon name='arrow-right' />;
-      <Icon name='arrow-left' type='outline' size={36} color='red' />;
+      <Icon name='arrow-right' />
+      <Icon name='arrow-left' type='outline' size={36} color='red' />
     </>
   )
 };
