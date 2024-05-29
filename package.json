@@ -1,6 +1,6 @@
 {
   "name": "@swmansion/icons",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Software Mansion Icon Pack",
   "type": "module",
   "main": "./react-icon-pack/dist",
