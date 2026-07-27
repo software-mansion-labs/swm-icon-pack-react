@@ -1,0 +1,45 @@
+name: Publish
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    if: github.repository == 'software-mansion-labs/swm-icon-pack-react'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: 'https://registry.npmjs.org'
+
+      # Trusted publishing needs npm >= 11.5.1; Node 22 ships with npm 10.
+      - name: Upgrade npm
+        run: npm install -g npm@^11
+
+      - name: Verify tag matches package version
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          pkg="$(node -p "require('./package.json').version")"
+          test "$tag" = "$pkg" || { echo "tag $tag != package.json $pkg"; exit 1; }
+
+      - name: Build dist
+        run: cd react-icon-pack && yarn install --frozen-lockfile && yarn build
+
+      # npm drops missing "files" entries silently, so a half-built dist would
+      # publish as a package whose main points at nothing.
+      - name: Verify build output
+        run: |
+          for f in index.js index.mjs index.d.ts index.d.mts; do
+            test -f "react-icon-pack/dist/$f" || { echo "missing dist/$f"; exit 1; }
+          done
+
+      # Authenticates via OIDC and attaches provenance, both without a token.
+      - name: Publish
+        run: npm publish --access public

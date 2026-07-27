@@ -108,6 +108,15 @@ export default App;
 
 ## Contributing
 
+### Releasing
+
+1. Bump `version` in `package.json` and merge it to `main`.
+2. Publish a GitHub Release tagged `vX.Y.Z`, matching that version.
+
+Publishing the release triggers the [`Publish` workflow](.github/workflows/publish.yaml), which builds
+the package and publishes it with
+[npm provenance](https://docs.npmjs.com/generating-provenance-statements).
+
 ### Updating icons
 1. Export icons from Figma in SVG format.
 2. Put icons in the proper subdirectory inside `icons/`.
