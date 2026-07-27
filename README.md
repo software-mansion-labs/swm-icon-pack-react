@@ -110,13 +110,12 @@ export default App;
 
 ### Releasing
 
-```bash
-yarn release
-```
+1. Bump `version` in `package.json` and merge it to `main`.
+2. Publish a GitHub Release tagged `vX.Y.Z`, matching that version.
 
-This bumps the version, tags the commit and creates a GitHub Release. It does not publish to npm —
-the release event triggers the [`Publish` workflow](.github/workflows/publish.yaml), which builds the
-package and publishes it with [npm provenance](https://docs.npmjs.com/generating-provenance-statements).
+Publishing the release triggers the [`Publish` workflow](.github/workflows/publish.yaml), which builds
+the package and publishes it with
+[npm provenance](https://docs.npmjs.com/generating-provenance-statements).
 
 ### Updating icons
 1. Export icons from Figma in SVG format.

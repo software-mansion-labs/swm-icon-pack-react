@@ -1,6 +1,6 @@
 {
   "name": "@swmansion/icons",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Software Mansion Icon Pack",
   "type": "module",
   "main": "./react-icon-pack/dist",
@@ -45,8 +45,7 @@
     "format:all:fix": "yarn format:fix && yarn format:native:fix && yarn format:web:fix && yarn format:example:fix && yarn format:exampleNative:fix",
     "prebuild": "cd react-icon-pack && yarn && cd ..",
     "build": "cd react-icon-pack && yarn build",
-    "generate-fonts": "./cli.js",
-    "release": "release-it"
+    "generate-fonts": "./cli.js"
   },
   "devDependencies": {
     "@eslint/js": "^9.3.0",
@@ -57,19 +56,10 @@
     "globals": "^15.3.0",
     "oslllo-svg-fixer": "^4.0.1",
     "prettier": "3.2.5",
-    "release-it": "^17.3.0",
     "svgtofont": "^4.2.0",
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.10.0",
     "yargs": "^17.7.2"
-  },
-  "release-it": {
-    "github": {
-      "release": true
-    },
-    "npm": {
-      "publish": false
-    }
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"

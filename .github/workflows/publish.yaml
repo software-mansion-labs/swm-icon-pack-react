@@ -21,7 +21,7 @@ jobs:
 
       # Trusted publishing needs npm >= 11.5.1; Node 22 ships with npm 10.
       - name: Upgrade npm
-        run: npm install -g npm@latest
+        run: npm install -g npm@^11
 
       - name: Verify tag matches package version
         run: |
@@ -30,7 +30,15 @@ jobs:
           test "$tag" = "$pkg" || { echo "tag $tag != package.json $pkg"; exit 1; }
 
       - name: Build dist
-        run: cd react-icon-pack && yarn && yarn build
+        run: cd react-icon-pack && yarn install --frozen-lockfile && yarn build
+
+      # npm drops missing "files" entries silently, so a half-built dist would
+      # publish as a package whose main points at nothing.
+      - name: Verify build output
+        run: |
+          for f in index.js index.mjs index.d.ts index.d.mts; do
+            test -f "react-icon-pack/dist/$f" || { echo "missing dist/$f"; exit 1; }
+          done
 
       # Authenticates via OIDC and attaches provenance, both without a token.
       - name: Publish
